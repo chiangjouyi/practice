@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="/jquery.countdown-2.2.0/jquery.countdown.js"></script>
+
+</head>
+<body style="background-color: white">
+<div class="container-fluid" >
+    <div class="row" style="height: 50px;">
+        <div class="col" >
+            <div class="row shortcut" style="height: 50px;">
+                <div class="col col-lg-3" style="padding-left: 100px">
+                    <div class="navbtn" style="height: 50px; text-align: center; line-height: 50px" >
+                        <i></i>
+                        <span class="chosenlocation" data-id="" id="location_btn" >北京</span>
+                    </div>
+                    <div class="dropdownlist" style="background-color: white;" id="location_list">
+                        <div class="locations" >
+                            <div class="location "><a href="javascript:void(0)" data-id="1">北京</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="2">上海</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="3">天津</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="4">重庆</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="5">河北</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="6">山西</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="7">河南</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="8">辽宁</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="9">吉林</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="10">黑龙江</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="11">内蒙古</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="12">江苏</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="13">山东</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="14">安徽</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="15">浙江</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="16">福建</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="17">湖北</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="18">湖南</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="19">广东</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="20">广西</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="21">江西</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="22">四川</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="23">海南</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="24">贵州</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="25">云南</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="26">西藏</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="27">陕西</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="28">甘肃</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="29">青海</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="30">宁夏</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="31">新疆</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="32">港澳</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="33">台湾</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="34">钓鱼岛</a></div>
+                            <div class="location "><a href="javascript:void(0)" data-id="365">海外</a></div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="sitescontaoner">
+                            <p>Available Sites</p>
+                            <div class="sites">
+                                <div class="site "><a href="javascript:void(0)" target="_blank">Global Site</a></div>
+                                <div class="site "><a href="javascript:void(0)" target="_blank">Сайт России</a></div>
+                                <div class="site "><a href="javascript:void(0)" target="_blank">Situs Indonesia</a></div>
+                                <div class="site "><a href="javascript:void(0)" target="_blank">Sitio de España</a></div>
+                                <div class="site "><a href="javascript:void(0)" target="_blank">เว็บไซต์ประเทศไทย</a></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col col-lg-9">
+                    <div class="functionlist" style="text-align: center; line-height: 50px; float:left;">
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >你好，请登录</a>
+                        </div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" style="color: #f10215">免费注册</a>
+                        </div>
+                        <div class="navbtns"><span>|</span></div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >我的订单</a>
+                        </div>
+                        <div class="navbtns"><span>|</span></div>
+
+                        <div class="navbtns" id="mybtn" style="height: 50px; text-align: center; line-height: 50px">
+                            <a class="btncolor" href="javascript:void(0)" >我的京东</a>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </div>
+
+                        <div class="dropdownlist2" style="background-color: white; width: 250px;height: 160px;line-height: 15px; font-size: smaller" >
+                            <div class="my_list" >
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">待处理订单</a></div>
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">返修退换货</a></div>
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">降价商品</a></div>
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">消息</a></div>
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">我的问答</a></div>
+                                <div class="mylist "><a href="javascript:void(0)" target="_blank">我的关注</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="my_morelist">
+                                <div class="mymorelist "><a href="javascript:void(0)" target="_blank">我的京豆</a></div>
+                                <div class="mymorelist "><a href="javascript:void(0)" target="_blank">我的白条</a></div>
+                                <div class="mymorelist "><a href="javascript:void(0)" target="_blank">我的优惠券</a></div>
+                                <div class="mymorelist "><a href="javascript:void(0)" target="_blank">我的理财</a></div>
+                            </div>
+                        </div>
+
+
+                        <div class="navbtns"><span>|</span></div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >京东会员</a>
+                        </div>
+                        <div class="navbtns"><span>|</span></div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >企业采购</a>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </div>
+                        <div class="navbtns"><span>|</span></div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >客户服务</a>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </div>
+                        <div class="navbtns"><span>|</span></div>
+                        <div class="navbtns">
+                            <a class="btncolor" href="javascript:void(0)" >网站导航</a>
+                            <i class="glyphicon glyphicon-chevron-down"></i>
+                        </div>
+                        <div class="navbtns"><span>|</span></div> <div class="navbtns">
+                        <a class="btncolor" href="javascript:void(0)" >手机京东</a>
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container" style="background-color: #ffffff">
+        <div class="" style="padding-top: 40px; padding-bottom: 100px">
+            <div class="row ">
+                <div class="col col-lg-3"></div>
+                <div class="col col-lg-5">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="家用电器" aria-label="" style="font-size: small">
+                        <div class="input-group-append">
+                            <div class="input-group">
+                                <label class="input-group-btn">
+                                    <span class="btn btn-lg btn-outline-light">
+                                        <i class="glyphicon glyphicon-camera" style="color: grey"></i>  
+                                        <input type="file" style="display: none;" multiple>
+                                    </span>
+
+                                </label>
+                            </div>
+                            <span class="btn btn-lg btn-outline-dander " style="background-color: #ee2f30">
+                                <i class="glyphicon glyphicon-search" style="color: white"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="hotkeyword" style="line-height: 50px">
+                        <a href="javascript:void(0)" style="color: #ee2f30;">过年不打烊</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 10px;">199减100</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">每160-60</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">生鲜礼盒</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">美酒盛宴</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">京东健康</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">蓝牙音箱</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">服饰年礼</a>
+                        <a href="javascript:void(0)" class="keyword" style="padding-left: 3px;">家具9块9</a>
+
+                    </div>
+                </div>
+                <div class="col col-lg-4">
+                    <div >
+                        <a href="javascript:void(0)" id="cartbtn" style="padding-left: 30px">
+                            <i class="glyphicon glyphicon-shopping-cart" style="color: #ee2f30;padding-right: 10px"></i>
+                            我的购物车
+                        </a>
+                        <div class="cart cartdrophide">
+                            <span style= " color: #999999; font-size: small;"> 购物车中还没有商品，赶紧选购吧！</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col col-lg-1">
+
+                </div>
+                <div class="col col-lg-8">
+                    <div class="" style="text-align: center; line-height: 60px; width: 750px; ">
+
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >秒杀</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >优惠券</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >PLUS会员</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >闪购</a>
+                        </div>
+                        <div class="dept"><span>|</span></div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >拍卖</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >京东时尚</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >京东超市</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >京东生鲜</a>
+                        </div>
+                        <div class="dept"><span>|</span></div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >海囤全球</a>
+                        </div>
+                        <div class="dept">
+                            <a class="deptitem" href="javascript:void(0)" >京东金融</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col col-lg-7">
+                    <div id="carouselExampleIndicators" class="carousel slide carouselauto" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img class="d-block w-100" src="./img/1.png" alt="First slide" >
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img class="d-block w-100" src="./img/2.png" alt="Second slide" >
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img class="d-block w-100" src="./img/3.png" alt="Third slide" >
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img class="d-block w-100" src="./img/4.png" alt="Forth slide" >
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="javascript:void(0)" target="_blank">
+                                    <img class="d-block w-100" src="./img/5.png" alt="Fifth slide" >
+                                </a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-lg-2" style="margin-left: -15px">
+                    <a href="javascript:void(0)" target="_blank" style="padding-right: 20px">
+                        <img class="sidead" src="./img/11.png" alt="SideAD" width="200">
+                    </a>
+                    <a href="javascript:void(0)" target="_blank" style="padding-right: 20px">
+                        <img class="sidead" src="./img/12.png" alt="SideAD" width="200">
+                    </a>
+                    <a href="javascript:void(0)" target="_blank">
+                        <img class="sidead" src="./img/13.png" alt="SideAD" width="200">
+                    </a>
+                </div>
+                <div class="col col-lg-2" style="margin-left: 20px; " >
+                    <div class="mamberbg" style="background-color: white; width: 200px; height: 511px; border-bottom: #999999; font-size: small" >
+                        <div style="text-align: center">
+                            <a href="javascript:void(0)" target="_blank"><img class="circle" src="./img/no_login.jpg"></a>
+                        </div>
+                        <div>
+                            <p style="color: grey; text-align: center">Hi~欢迎来到京东！</p>
+                        </div>
+                        <div style="text-align: center">
+                            <a class="member" href="javascript:void(0)" >登录</a>
+                            <a class="member" href="javascript:void(0)" >注册</a>
+                        </div>
+                        <div style="text-align: center; padding-top: 10px; font-size: smaller">
+                            <button class="whitebtn"  type="submit" formtarget="_blank">新人福利</button>
+                            <button class="blackbtn" type="submit" formtarget="_blank">PLUS会员</button>
+                        </div>
+                        <div style="padding:30px">
+                            <p style="float: left; font-size: small; font-weight: bold">京东快报</p>
+                            <a href="javascript:void(0)" style="float: right; " class="greyhover">更多 ></a>
+                        </div>
+                        <div style="padding-left:30px; font-size: smaller; ">
+                            <a href="javascript:void(0)" class="ellipsis" style="float: left; text-decoration: none"; target="_blank">
+                                <span style="background-color: #90b0c6; color: white; padding: 2px 7px;border-radius: 5px;">公告</span>
+                                &nbsp;<span class="m-link">2019年春节物流服...</span>
+                            </a>
+                            <a href="javascript:void(0)" class="ellipsis" style="float: left; text-decoration: none"; target="_blank">
+                                <span style="background-color: #e0b95a; color: white; padding: 2px 7px;border-radius: 5px;">活动</span>
+                                &nbsp;<span class="m-link">优选好货</span>
+                            </a>
+                            <a href="javascript:void(0)" class="ellipsis" style="float: left; text-decoration: none"; target="_blank">
+                                <span style="background-color: #e47f7f; color: white; padding: 2px 7px;border-radius: 5px;">热门</span>
+                                &nbsp;<span class="m-link">史上良心iPhone再次...</span>
+                            </a>
+                            <a href="javascript:void(0)" class="ellipsis" style="float: left; text-decoration: none"; target="_blank">
+                                <span style="background-color: #e47f7f; color: white; padding: 2px 7px;border-radius: 5px;">推荐</span>
+                                &nbsp;<span class="m-link">员工疏忽导致售价出...</span>
+                            </a>
+                        </div>
+                        <br>
+                        <div class="servicebox" >
+                            <div class="servicelist">
+                                <div class="serviceitem" style="width: 200px; font-size: smaller" >
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/phone.png" width="40" height="32"><p>话费</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/ticket.png" width="40" height="32"><p>机票</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/hotel.png" width="40" height="32"><p>酒店</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/game.png" width="40" height="32"><p>游戏</p></a>
+                                    <br>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/co.png" width="40" height="32"><p >企业购</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/gas.png" width="40" height="32"><p>加油卡</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/cinema.png" width="40" height="32"><p>电影票</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/fare.png" width="40" height="32"><p>火车票</p></a>
+                                    <br>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/crowdfunding.png" width="40" height="32"><p >众筹</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/wealthmanage.png" width="40" height="32"><p>理财</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/giftcard.png" width="40" height="32"><p>礼品卡</p></a>
+                                    <a href="javascript:void(0)" target="_blank"><img src="./img/loan.png" width="40" height="32"><p>白条</p></a>
+                                </div>
+                            </div>
+                            <div class="servicedetails" style="width: 200px; font-size: smaller">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-12" style="padding-top: 30px">
+                    <div class="row">
+                        <div class="col col-md-2" style="background-color: #e83632; padding-top: 30px; padding-bottom: 20px">
+                            <a style="text-align: center; color: white">
+                                <h1 style="font-size: xx-large">京东秒杀</h1>
+                                <h3 style="color:rgba(255, 255, 255, 0.5)">FLASH DEALS</h3>
+                                <p>
+                                    <i class="glyphicon glyphicon-fire" style="color: white; font-size: 40px;"></i>
+                                </p>
+                                <h4>本场距离结束还剩</h4>
+                                <div class="countdown" style="color: white; font-weight: bold; font-size: xx-large; margin-left: -5px; margin-right: -5px;padding-top: 10px">
+                                    <span id="hour">00</span>
+                                    <span id="min">00</span>
+                                    <span id="sec">00</span>
+                                </div>
+
+                            </a>
+                        </div>
+                        <div class="col col-md-8">
+                            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" >
+                                    <div class="carousel-item active" style="text-align: center">
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class="" src="./img/item1.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item2.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item3.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item4.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item5.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item6.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item7.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item8.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item9.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item10.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item11.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item12.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item13.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item14.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item15.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                        <a href="javascript:void(0)" target="_blank" class="itemad">
+                                            <img class=" " src="./img/item16.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col col-md-2">
+                            <div id="carouselExampleIndicators3" class="carousel slide carouselauto" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <a href="javascript:void(0)" target="_blank">
+                                            <img class=" " src="./img/item01.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="javascript:void(0)" target="_blank">
+                                            <img class=" " src="./img/item02.png" alt="First slide" width="180" height="260">
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<style>
+    .shortcut{
+        border-bottom: 1px solid #ddd;
+        background-color: #e3e4e5;
+        font-size: small;
+        color: #999999;
+    }
+    .shortcut a{
+        color: #999999;
+    }
+    .locations{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        line-height: 40px;
+    }
+    .locations > .location{
+        width: 20%;
+    }
+    .location a{
+        color: #999999;
+    }
+    .location a:hover{
+        color: #ee2f30;
+        background-color: #dddddd;
+        text-decoration: none;
+    }
+    .my_list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .mylist{
+        width: 50%;
+    }
+    .my_morelist{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .mymorelist{
+        width: 50%;
+    }
+
+    .line{
+        border-bottom: dotted 1px #e3e4e5;
+    }
+    .sitescontaoner{
+        padding: 20px;
+    }
+    .sites{
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 40px;
+    }
+    .sites > .site{
+        width: 50%;
+    }
+    .site a{
+        color: #999999;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .site a:hover{
+        color: #ee2f30;
+        text-decoration: none;
+    }
+    .site{
+        display: inline;
+    }
+    .navbtn{
+        width: 80px;
+    }
+    .btncolor:hover{
+        color: #ee2f30;
+        text-decoration: none;
+    }
+    .navbtns{
+        display: inline;
+    }
+    .navbtns a:hover{
+        color: #c81623;
+    }
+    .navbtns span{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .hotkeyword a{
+        width: 40px;
+        text-decoration: none;
+    }
+    .keyword{
+        color: #999999;
+    }
+    .keyword:hover{
+        color: #ee2f30;
+    }
+    #cartbtn{
+        background-color: white;
+        border: #999999 solid 1px;
+        color: #ee2f30;
+        padding: 10px 60px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+    }
+    .dept{
+        display: inline;
+    }
+    .dept a{
+        font-size: 14px;
+        padding: 10px;
+        color: #333333;
+        text-decoration: none;
+    }
+    .dept a:hover{
+        color: #c81623;
+    }
+    .cartdrophide{
+        display: none;
+    }
+    .cartdropshow{
+        margin-bottom: -50px;
+        background-color: white;
+        padding-top: 20px;
+        background-color: white;
+        border: #999999 solid 1px;
+        padding: 25px 60px;
+    }
+    .sidead:hover{
+        opacity: 0.4;
+    }
+    .circle{
+        width: 80px;
+        border-radius: 50%;
+        border: 7px solid #e3e4e5;
+    }
+    .mamberbg{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .member{
+        color: #999999;
+    }
+    .member:hover{
+        text-decoration: none;
+        color: #c81623;
+    }
+    .whitebtn{
+        background-color: white;
+        border: none;
+        color: #c81623;
+        padding: 5px 10px;
+        border-radius: 24px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .blackbtn{
+        background-color: #363634;
+        border: none;
+        color: #e5d790;
+        padding: 5px 10px;
+        border-radius: 24px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .whitebtn:hover, .blackbtn:hover{
+        background-color: #c81623;
+        color: white;
+    }
+    .greyhover{
+        color: #999999;
+        text-decoration: none;
+    }
+    .greyhover:hover{
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .ellipsis {
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-bottom: 10px;
+    }
+    .m-link{
+        float: right;
+        color: #999999;
+    }
+    .serviceitem{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .serviceitem a{
+        text-decoration: none;
+        color: #d1c5ae;
+        padding-left: 8px;
+    }
+    .serviceitem a:hover{
+        color: #c81623;
+    }
+    .serviceitem a p{
+        text-align: center;
+    }
+    .dropdownlist2 a:hover{
+        text-decoration: none;
+        color: #c81623;
+    }
+    .itemad:hover{
+        opacity: 0.4;
+    }
+    .countdown span{
+        background-color: #2f3430;
+        padding: 5px;
+    }
+
+
+</style>
+
+
+<script>
+    $(function () {
+        $('#location_list').hide();
+        $('.dropdownlist2').hide();
+
+        var dropdownOver1 = function(){
+            $('#location_list').show();
+            $('#location_list').css({"border-right":"solid 1px #999999", "border-left":"solid 1px #999999","border-bottom":"solid 1px #999999", "margin-right":"-50px","position":"relative", "z-index":"9999"});
+            $('.navbtn').css({"border-right":"solid 1px #999999", "border-left":"solid 1px #999999", "background-color":"white"});
+        };
+        var dropDownOut1 = function(){
+            $('#location_list').hide();
+            $('.navbtn').css({"background-color":"","border-right":"", "border-left":""});
+        };
+
+
+        $('#location_btn').mouseover(function () {
+            dropdownOver1();
+        });
+
+        $('.locations a').click(function () {
+            $(this).css("text-decoration","none");
+            $('.navbtn span').html($(this).text());
+        });
+
+        $('body:not(.locations a)').click(function () {
+                dropDownOut1();
+            });
+
+        $('#mybtn').mouseover(function () {
+                $('.dropdownlist2').show();
+                $('.dropdownlist2').css({"padding":"5px 10px","border-right":"solid 1px #999999", "border-left":"solid 1px #999999","border-bottom":"solid 1px #999999","position":"relative", "z-index":"9999","margin-bottom":"100px",});
+                $('#mybtn').css({"background-color":"white","padding":"15px"});
+            });
+        $('.container').mouseover(function () {
+            $('.dropdownlist2').hide();
+            $('#mybtn').css({"background-color":"", "padding":""});
+        });
+
+
+
+            $('#cartbtn').hover(
+            function () {
+            $('.cart').removeClass('cartdrophide');
+            $('.cart').addClass('cartdropshow');
+            $('#cartbtn').css("border-bottom","none");
+        },
+            function () {
+                $('.cart').removeClass('cartdropshow');
+                $('.cart').addClass('cartdrophide');
+                $('#cartbtn').css("border-bottom","");
+
+            });
+
+        $('.carousel slide carouselauto').carousel('cycle');
+
+        $('.ellipsis').hover(
+            function () {
+                $(this).children('.m-link').css({"color":"#c81623","text-decoration":"none"});
+            },
+
+            function () {
+                $(this).children('.m-link').css({"color":"","text-decoration":"none"});
+            }
+        );
+
+
+        $('#hour').countdown('2019/02/28', function(event) {
+            $(this).html(event.strftime('%H'));
+        });
+        $('#min').countdown('2019/02/28', function(event) {
+            $(this).html(event.strftime('%M'));
+        });
+        $('#sec').countdown('2019/02/28', function(event) {
+            $(this).html(event.strftime('%S'));
+        });
+
+
+    });
+
+
+
+</script>
+
+
+
+</body>
+</html>
