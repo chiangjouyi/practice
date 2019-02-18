@@ -955,13 +955,47 @@
                                             <div id="tab-demo-s">
 
                                                 <div id="tab01-s" class="tab-inner-s">
-                                                    <div style="height: 375px">会买专辑p1的內容</div>
+                                                    <div style="height: 375px; padding-top: 20px">
+                                                        <a href="javascript:void(0)" target="_blank" class="">
+                                                            <img src="img/s101.png" width="320" class="img_active">
+                                                        </a>
+                                                        <a href="javascript:void(0)" target="_blank" class="">
+                                                            <img src="img/s102.png" width="320" class="img_active">
+                                                        </a>
+                                                        <a href="javascript:void(0)" target="_blank" class="">
+                                                            <img src="img/s103.png" width="320" class="img_active">
+                                                        </a>
+                                                    </div>
                                                 </div>
                                                 <div id="tab02-s" class="tab-inner-s">
-                                                    <div style="height: 375px">会买专辑p2的內容</div>
+                                                    <div style="height: 375px">
+                                                        <div style="height: 375px; padding-top: 20px">
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s201.png" width="320" class="img_active">
+                                                            </a>
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s202.png" width="320" class="img_active">
+                                                            </a>
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s203.png" width="320" class="img_active">
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div id="tab03-s" class="tab-inner-s">
-                                                    <div style="height: 375px">会买专辑p3的內容</div>
+                                                    <div style="height: 375px">
+                                                        <div style="height: 375px; padding-top: 20px">
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s301.png" width="320" class="img_active">
+                                                            </a>
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s302.png" width="320" class="img_active">
+                                                            </a>
+                                                            <a href="javascript:void(0)" target="_blank" class="">
+                                                                <img src="img/s303.png" width="320" class="img_active">
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <hr>
                                                 <ul class="tab-title-s" >
@@ -1264,6 +1298,10 @@
     .p_name{
         color: #333333;
     }
+    /*.tab-inner-s a:hover{*/
+        /*opacity: 0.4;*/
+    /*}*/
+    
 
 
 </style>
@@ -1401,6 +1439,16 @@
             $($(this).find('a').css({"color":"#c81623"}).attr ('href')).show().siblings ('.tab-inner-t').hide();
             $(this).siblings().find('a').css({"color":""});
         });
+
+
+        $('div.tab-inner-2 div div div div a').hover(
+            function () {
+                $(this).find('img').css({"opacity":"0.4"});
+            },
+            function () {
+                
+            }
+        );
 
     });
 
